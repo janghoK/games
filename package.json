@@ -1,0 +1,22 @@
+{
+  "name": "@games/root",
+  "private": true,
+  "scripts": {
+    "dev:game-service": "pnpm --filter @games/game-service start:dev",
+    "preinstall": "pnpm dlx only-allow pnpm"
+  },
+  "workspaces": [
+    "packages/*",
+    "game-service"
+  ],
+  "engines": {
+    "node": ">=16.17.0",
+    "pnpm": ">=7.17.0"
+  },
+  "packageManager": "pnpm@7.17.0",
+  "devDependencies": {
+    "pnpm": "^7.17.0"
+  },
+  "author": "janghoK",
+  "license": "ISC"
+}
